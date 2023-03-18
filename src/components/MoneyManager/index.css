@@ -1,0 +1,286 @@
+/* Write your CSS here */
+
+.bgContainer {
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.topBgImage {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  height: 200px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .topBgImage {
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+}
+
+.heading {
+  font-family: roboto;
+  color: #475569;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.paragraph {
+  font-family: roboto;
+  color: #7e858e;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.spanElement {
+  color: #0b69ff;
+  font-weight: bold;
+}
+
+.balanceImage {
+  height: 80px;
+  margin-right: 20px;
+}
+
+.AccountSection {
+  margin-top: 30px;
+}
+
+.balanceContainer {
+  background-color: #ecfccb;
+  border-style: solid;
+  border-color: #84cc16;
+  border-width: 1px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.incomeContainer {
+  background-color: #cffafe;
+  border-style: solid;
+  border-color: #06b6d4;
+  border-width: 1px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.expenseContainer {
+  background-color: #ede9fe;
+  border-style: solid;
+  border-color: #7c3aed;
+  border-width: 1px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .balanceContainer {
+    width: 32%;
+  }
+
+  .incomeContainer {
+    width: 32%;
+  }
+
+  .expenseContainer {
+    width: 32%;
+  }
+
+  .AccountSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.para {
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+
+.bAmount {
+  margin-top: 5px;
+  font-weight: 450;
+  color: #334155;
+}
+
+@media screen and (min-width: 768px) {
+  .bAmount {
+    font-weight: 30px;
+    font-size: 22px;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.bottomContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .bottomContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.AddTranscationContainer {
+  border-style: solid;
+  border-color: #d7dfe9;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .AddTranscationContainer {
+    width: 40%;
+  }
+}
+
+.transactionHeading {
+  font-family: roboto;
+  color: #475569;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.titleLabel {
+  font-family: roboto;
+  color: #7e858e;
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+
+.inputText {
+  font-family: roboto;
+  color: #7e858e;
+  font-size: 14px;
+  height: 40px;
+  border-radius: 5px;
+  border-color: #d7dfe9;
+  border-style: solid;
+  padding: 10px;
+}
+
+.optionsSection {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #d7dfe9;
+}
+
+.button {
+  background-color: #0b69ff;
+  border-radius: 5px;
+  border-style: none;
+  color: #ffffff;
+  font-family: roboto;
+  height: 30px;
+  width: 65px;
+  margin-top: 30px;
+}
+
+.historySection {
+  border-style: solid;
+  border-color: #d7dfe9;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .historySection {
+    width: 57%;
+  }
+}
+
+.historyHeading {
+  font-family: roboto;
+  color: #475569;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.transactionBox {
+  display: flex;
+  justify-content: space-around;
+  border-style: solid;
+  border-color: #d7dfe9;
+  border-width: 1px;
+  padding: 5px;
+}
+
+.title {
+  font-family: roboto;
+  color: #475569;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.listItems {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-style: solid;
+  border-color: #d7dfe9;
+  border-width: 1px;
+  padding: 5px;
+  height: 40px;
+}
+
+.titles {
+  font-family: roboto;
+  color: #475569;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.deleteImage1 {
+  height: 20px;
+  opacity: 0;
+}
+
+.unorderedList {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.deleteImage {
+  height: 20px;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border-style: none;
+}
