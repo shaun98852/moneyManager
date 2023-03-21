@@ -48,11 +48,23 @@ class MoneyManager extends Component {
     event.preventDefault()
     const {title, amount, type} = this.state
 
-    const newObject = {
-      id: uuidv4(),
-      titles: title,
-      amounts: amount,
-      type,
+   
+    let newObject
+
+    if (amount === '') {
+      newObject = {
+        id: uuidv4(),
+        titles: title,
+        amounts: 0,
+        type,
+      }
+    } else {
+      newObject = {
+        id: uuidv4(),
+        titles: title,
+        amounts: amount,
+        type,
+      }
     }
 
     this.setState(prevState => ({
