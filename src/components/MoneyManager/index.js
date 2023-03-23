@@ -105,12 +105,12 @@ class MoneyManager extends Component {
             <h1 className="transactionHeading">Add Transaction</h1>
             <form className="transcationForm" onSubmit={this.addButton}>
               <div className="titleContainer">
-                <label htmlFor="title" className="titleLabel">
+                <label htmlFor="titleRequired" className="titleLabel">
                   TITLE
                 </label>
                 <input
                   type="text"
-                  id="title"
+                  id="titleRequired"
                   className="inputText"
                   placeholder="TITLE"
                   onChange={this.title}
@@ -119,12 +119,12 @@ class MoneyManager extends Component {
               </div>
 
               <div className="titleContainer">
-                <label htmlFor="title" className="titleLabel">
+                <label htmlFor="amountInput" className="titleLabel">
                   AMOUNT
                 </label>
                 <input
                   type="text"
-                  id="title"
+                  id="amountInput"
                   className="inputText"
                   placeholder="AMOUNT"
                   onChange={this.amount}
@@ -155,11 +155,7 @@ class MoneyManager extends Component {
               <p className="title">Title</p>
               <p className="title">Amount</p>
               <p className="title">Type</p>
-              <img
-                src="https://assets.ccbp.in/frontend/react-js/money-manager/delete.png"
-                alt="delete"
-                className="deleteImage1"
-              />
+          
             </div>
 
             <ul className="unorderedList">
